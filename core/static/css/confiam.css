@@ -32,10 +32,14 @@ body{
 .item h2, h1{
 	padding-left: 2em;
 	padding-right: 2em;
+	word-wrap: break-word;
+	text-align: center
 }
 .post h2, h1{
 	padding-left: 2em;
 	padding-right: 2em;
+	word-wrap: break-word;
+	text-align: center
 }
 
 .post img{
