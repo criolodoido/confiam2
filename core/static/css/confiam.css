@@ -30,7 +30,7 @@ body{
 
 }
 .btns{
-	position: fixed;
+	/* position: fixed; */
 }
 .item h2, h1{
 	padding-top: 3em;
