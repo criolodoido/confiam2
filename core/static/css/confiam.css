@@ -30,6 +30,11 @@ body{
 
 }
 .btns{
+	position: fixed;
+	top: 10;
+	text-align:center;
+	right:10%;
+	left:10%;
 	/* position: fixed; */
 }
 .item h2, h1{
