@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+{% load cloudinary %}
+{% block content %}
+    <div class="post">
+        {% if hotel.published_date %}
+            <div class="date">
+                {{ hotel.published_date }}
+            </div>
+        {% endif %}
+        <p><h1>{{ hotel.nome }}</h1></p>
+        <center><img>{% cloudinary hotel.foto %}</img></center>
+        <p><h2>{{ hotel.apresentacao|linebreaksbr }}</h2></p>
+    </div>
+<div class="fb-comments" data-href="{{ request.build_absolute_url }}" data-numposts="2"></div>
+{% endblock %}

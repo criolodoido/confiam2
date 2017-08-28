@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+{% load cloudinary %}
+{% load staticfiles %}
+{% block content %}
+
+	{% for palestra in palestras %}
+		<div class=item>
+			<p><h1><a href="{{ palestra.get_absolute_url }}">{{ palestra.nome }}</a></h1></p>
+			<center><img>{% cloudinary palestra.foto %}</img></center>
+			<p><h2>{{ palestra.apresentacao }}</h2></p>
+			<br>
+		</div>
+	{% endfor %}
+{% endblock %}
+
+<!--
+<p><h1><a href="{% url 'core:detalhe' pk=post.pk %}">{{ post.nome }}</a></h1></p>
+-->

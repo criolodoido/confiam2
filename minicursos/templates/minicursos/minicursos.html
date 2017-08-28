@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+{% load cloudinary %}
+{% load staticfiles %}
+{% block content %}
+
+	{% for minicurso in minicursos %}
+		<div class=item>
+			<p><h1><a href="{{ minicurso.get_absolute_url }}">{{ minicurso.nome }}</a></h1></p>
+			<center><img>{% cloudinary minicurso.foto %}</img></center>
+			<p><h2>{{ minicurso.apresentacao }}</h2></p>
+			<br>
+		</div>
+	{% endfor %}
+{% endblock %}
+
+<!--
+<p><h1><a href="{% url 'core:detalhe' pk=post.pk %}">{{ post.nome }}</a></h1></p>
+-->

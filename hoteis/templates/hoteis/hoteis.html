@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+{% load cloudinary %}
+{% load staticfiles %}
+{% block content %}
+
+	{% for hotel in hoteis %}
+		<div class=item>
+			<p><h1><a href="{{ hotel.get_absolute_url }}">{{ hotel.nome }}</a></h1></p>
+			<center><img>{% cloudinary hotel.foto %}</img></center>
+			<p><h2>{{ hotel.apresentacao }}</h2></p>
+			<br>
+		</div>
+	{% endfor %}
+{% endblock %}
+
+<!--
+<p><h1><a href="{% url 'core:detalhe' pk=post.pk %}">{{ post.nome }}</a></h1></p>
+-->

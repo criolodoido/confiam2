@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+{% load cloudinary %}
+{% load staticfiles %}
+{% block content %}
+
+	{% for programa in programas %}
+		<div class=item>
+			<p><h1><a href="{{ programa.get_absolute_url }}">{{ programa.nome }}</a></h1></p>
+			<center><img>{% cloudinary programa.foto %}</img></center>
+			<p><h2>{{ programa.apresentacao }}</h2></p>
+			<br>
+		</div>
+	{% endfor %}
+{% endblock %}
+
+<!--
+<p><h1><a href="{% url 'core:detalhe' pk=post.pk %}">{{ post.nome }}</a></h1></p>
+-->

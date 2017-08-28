@@ -1,6 +1,7 @@
 # -*- coding: utf 8 -*-
 from django.db import models
 from django.utils import timezone
+from django.core.urlresolvers import reverse
 from cloudinary.models import CloudinaryField
 
 class Minicursos(models.Model):
@@ -18,3 +19,7 @@ class Minicursos(models.Model):
 
 	def __str__(self):
 		return self.nome
+
+	def get_absolute_url(self):
+		#return reverse("detalhe", kwargs={"pk": self.pk})
+		return "minicurso/%s" %(self.pk)
