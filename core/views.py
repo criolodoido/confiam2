@@ -1,3 +1,4 @@
+from urllib.parse import quote_plus
 from django.shortcuts import render
 from django.utils import timezone
 from .models import Evento
@@ -10,5 +11,7 @@ def index(request):
 
 def post_detail(request, pk):
     post = get_object_or_404(Evento, pk=pk)
+    share_string = quote_plus(post.apresentacao)
+    context = { "title": post.nome, "instance": post.apresentacao, "share_string": share_string, }
     Evento.objects.get(pk=pk)
     return render(request, 'core/post_detail.html', {'post': post})
