@@ -4,7 +4,6 @@
 <html>
 <head>
 	<title>Confiam-Congresso de Física Aplicada à Medicina</title>
-	<meta property="fb:admins" content="{100002421374214}"/>
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -13,6 +12,11 @@
 	  ga('create', 'UA-102290379-1', 'auto');
 	  ga('send', 'pageview');
 	</script>
+	<meta property="fb:admins" content="{100002421374214}">
+	<meta property="og:url" content="{{ request.build_absolute_uri }}">
+	<meta property="og:title" content="{{ post.nome }}">
+	<meta property="og:description" content="{{ post.apresentacao }}">
+	<meta property="og:image" content="{% cloudinary post.foto %}">
 	<meta name="author" content="Visus">
 	<meta name="description" content="Confiam - Congresso de Física Aplicada à Medicina da Unesp de Botucatu">
 	<meta name="keywords" content="radioterapia, radiodiagnóstico, medicina nuclear, congresso, física médica, unesp, botucatu">
