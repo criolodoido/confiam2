@@ -3,7 +3,7 @@
 {% load social_widgets %}
 {% block content %}
 
-    {% social_widget_render "facebook/share_button.html" href="developers.facebook.com" %}
+    {% social_widget_render "facebook/share_button.html" app_id=106788150014600 href="{{ request.build_absolute_uri }}" show_border=True %}
     <div class="post">
         {% if post.published_date %}
             <div class="date">
