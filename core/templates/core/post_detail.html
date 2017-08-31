@@ -1,6 +1,9 @@
 {% extends 'core/base.html' %}
 {% load cloudinary %}
+{% load social_widgets %}
 {% block content %}
+
+    {% social_widget_render "facebook/share_button.html" href="developers.facebook.com" %}
     <div class="post">
         {% if post.published_date %}
             <div class="date">
