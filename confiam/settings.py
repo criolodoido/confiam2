@@ -1,10 +1,5 @@
 import os
 import dj_database_url
-<<<<<<< HEAD
-#  paths inside the project like this: os.path.join(BASE_DIR, ...)
-=======
-# Build paths in the project like this: os.path.join(BASE_DIR, ...)
->>>>>>> 9f8ab7cc49d6c3b413ba06c406b25b3659f5eeb8
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
