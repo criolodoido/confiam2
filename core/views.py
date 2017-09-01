@@ -11,7 +11,5 @@ def index(request):
 
 def post_detail(request, pk):
     post = get_object_or_404(Evento, pk=pk)
-    share_string = quote_plus(post.apresentacao)
-    context = { "title": post.nome, "instance": post.foto, "share_string": share_string, }
     Evento.objects.get(pk=pk)
     return render(request, 'core/post_detail.html', {'post': post})
