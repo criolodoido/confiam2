@@ -9,7 +9,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content={{ post.nome }}>
 <meta property="og:description" content={{ post.apresentacao }} >
-<meta property="og:image" content={% cloudinary_url post.foto %} > 
+<meta property="og:image" content="{% cloudinary_url post.foto %}" > 
 <meta property="og:url" content={{ request.build_absolute_uri }}>
 <meta name="author" content="Visus">
 <meta name="description" content="Confiam - Congresso de Física Aplicada à Medicina da Unesp de Botucatu">
