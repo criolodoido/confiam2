@@ -2,12 +2,25 @@
 {% load cloudinary %}
 {% load staticfiles %}
 {% block content %}
+<!--
+	{% for post in posts %}
+  		<div class="item">
+    		<h1>{{ post.nome }}</h1>
+    		<center><img>{% cloudinary post.foto %}</img></center>
+    		<p><h2>{{ post.apresentacao }}</h2></p>
+    		<div class="fb-comments" data-numposts="5"
+         		data-href="http://{{ request.META.HTTP_HOST }}{% url 'core:detalhe' pk=post.pk %}">
+    		</div>
+ 		</div>
+{% endfor %}
+-->
 
-	{% for minicurso in minicursos %}
+
+	{% for post in posts %}
 		<div class=item>
-			<p><h1><a href="{{ minicurso.get_absolute_url }}">{{ minicurso.nome }}</a></h1></p>
-			<center><img>{% cloudinary minicurso.foto %}</img></center>
-			<p><h2>{{ minicurso.apresentacao }}</h2></p>
+			<p><h1><a href="{{ post.get_absolute_url }}">{{ post.nome }}</a></h1></p>
+			<center><img>{% cloudinary post.foto %}</img></center>
+			<p><h2>{{ post.apresentacao }}</h2></p>
 			<br>
 		</div>
 	{% endfor %}
