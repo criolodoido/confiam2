@@ -21,4 +21,4 @@ class Palestras(models.Model):
 
 	def get_absolute_url(self):
 		#return reverse("detalhe", kwargs={"pk": self.pk})
-		return "/post/%s" %(self.pk)
+		return "/palestras/%s" %(self.pk)
