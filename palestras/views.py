@@ -3,12 +3,12 @@ from .models import Palestras
 from django.utils import timezone
 
 def palestras(request):
-	palestras = Palestras.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
-	return render(request, 'palestras/palestras.html', {'palestras': palestras})
+	posts = Palestras.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+	return render(request, 'palestras/palestras.html', {'posts': posts})
 
 
 def post_detail(request, pk):
-    palestra = get_object_or_404(Palestras, pk=pk)
+    post = get_object_or_404(Palestras, pk=pk)
     Palestras.objects.get(pk=pk)
-    return render(request, 'palestras/post_detail.html', {'palestra': palestra})
+    return render(request, 'palestras/post_detail.html', {'post': post})
 # Create your views here.
