@@ -21,4 +21,4 @@ class Programacao(models.Model):
 
 	def get_absolute_url(self):
 		#return reverse("detalhe", kwargs={"pk": self.pk})
-		return "/programacoes/%s" %(self.pk)
+		return "programacao/%s" %(self.pk)

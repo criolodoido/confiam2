@@ -22,4 +22,4 @@ class Hoteis(models.Model):
 
 	def get_absolute_url(self):
 		#return reverse("detalhe", kwargs={"pk": self.pk})
-		return "/hoeis/%s" %(self.pk)
+		return "hoteis/%s" %(self.pk)
