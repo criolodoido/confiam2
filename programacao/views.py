@@ -3,12 +3,12 @@ from django.utils import timezone
 from .models import Programacao
 
 def programacao(request):
-	programas = Programacao.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
-	return render(request, 'programacao/programacao.html', {'programas': programas})
+	posts = Programacao.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+	return render(request, 'programacao/programacao.html', {'posts': posts})
+
 
 def post_detail(request, pk):
-    programa = get_object_or_404(Programacao, pk=pk)
+    post = get_object_or_404(Programacao, pk=pk)
     Programacao.objects.get(pk=pk)
-    return render(request, 'programacao/post_detail.html', {'programa': programa})
-
+    return render(request, 'programacao/post_detail.html', {'post': post})
 # Create your views here.
