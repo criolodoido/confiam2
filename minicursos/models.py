@@ -22,4 +22,4 @@ class Minicursos(models.Model):
 
 	def get_absolute_url(self):
 		#return reverse("detalhe", kwargs={"pk": self.pk})
-		return "minicurso/%s" %(self.pk)
+		return "/post/%s" %(self.pk)
