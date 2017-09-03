@@ -12,5 +12,7 @@
         <center><img>{% cloudinary post.foto %}</img></center>
         <p><h2>{{ post.apresentacao|linebreaksbr }}</h2></p>
     </div>
+<footer>
 <div class="fb-comments" data-href="{{ request.build_absolute_uri }}" data-numposts="2"></div>
+</footer>
 {% endblock %}
