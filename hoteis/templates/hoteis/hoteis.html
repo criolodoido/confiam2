@@ -3,11 +3,11 @@
 {% load staticfiles %}
 {% block content %}
 
-	{% for hotel in hoteis %}
+	{% for post in posts %}
 		<div class=item>
-			<p><h1><a href="{{ hotel.get_absolute_url }}">{{ hotel.nome }}</a></h1></p>
-			<center><img>{% cloudinary hotel.foto %}</img></center>
-			<p><h2>{{ hotel.apresentacao }}</h2></p>
+			<p><h1><a href="{{ post.get_absolute_url }}">{{ post.nome }}</a></h1></p>
+			<center><img>{% cloudinary post.foto %}</img></center>
+			<p><h2>{{ post.apresentacao }}</h2></p>
 			<br>
 		</div>
 	{% endfor %}
