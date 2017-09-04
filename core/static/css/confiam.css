@@ -20,6 +20,7 @@ body{
 
 p{
 	text-align:justify, center;
+	white-space: pre-wrap;
 }
 .item img{
 	max-width: 50%;
