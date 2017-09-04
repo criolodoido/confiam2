@@ -19,8 +19,8 @@ body{
 }
 
 p{
-	text-align:justify, center;
-	white-space: pre-wrap;
+	text-align: center;
+	white-space: pre;
 }
 .item img{
 	max-width: 50%;
@@ -44,6 +44,7 @@ p{
 	padding-right: 2em;
 	word-wrap: break-word;
 	text-align: center
+	white-space: pre;
 }
 
 .patro h2, h1{
@@ -53,7 +54,7 @@ p{
 	padding-right: 2em;
 	word-wrap: break-word;
 	text-align: center
-	
+	white-space: pre;
 }
 
 .patro img{
