@@ -19,7 +19,7 @@ body{
 }
 
 p{
-	text-align:justify;
+	text-align:justify, center;
 }
 .item img{
 	max-width: 50%;
