@@ -18,11 +18,6 @@ body{
   	margin: 0;
 }
 
-p{
-	white-space: pre-line;
-	text-align: center;
-	
-}
 .item img{
 	max-width: 50%;
 	max-height: 50%;
@@ -38,30 +33,46 @@ p{
 	float: center;
 	/* position: fixed; */
 }
-.item h2, h1{
+.item h1{
 	font-family: 'Kurale';
+	position: relative;
+	margin: 0 auto;
 	padding-top: 3em;
 	padding-left: 4em;
 	padding-right: 2em;
 	word-wrap: break-word;
 	text-align: center
 
+
 }
-.item{
-	white-space: pre;
-}
-.patro h2, h1{
+
+
+.item h2{
 	font-family: 'Kurale';
+	position: relative;
+	margin: 0 auto;
 	padding-top: 3em;
 	padding-left: 4em;
 	padding-right: 2em;
 	word-wrap: break-word;
-	text-align: center
+	text-align: center;
+	white-space: pre-wrap;
+
+}
+
+.patro h2, h1{
+	font-family: 'Kurale';
+	position: relative;
+	margin: 0 auto;
+	padding-top: 3em;
+	padding-left: 4em;
+	padding-right: 2em;
+	word-wrap: break-word;
+	text-align: center;
+	white-space: pre-wrap;
 	
 }
-.patro{
-	white-space: pre;
-}
+
 .patro img{
 	max-width: 50%;
 	max-height: 50%;
@@ -195,7 +206,7 @@ p{
 	width: 100%;
 	height: 70px;
 }
-/*
+
 footer{
 	position: fixed; 
 	left: 0;
