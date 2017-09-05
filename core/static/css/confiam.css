@@ -19,8 +19,9 @@ body{
 }
 
 p{
+	white-space: pre-line;
 	text-align: center;
-	white-space: pre;
+	
 }
 .item img{
 	max-width: 50%;
@@ -44,9 +45,11 @@ p{
 	padding-right: 2em;
 	word-wrap: break-word;
 	text-align: center
+
+}
+.item{
 	white-space: pre;
 }
-
 .patro h2, h1{
 	font-family: 'Kurale';
 	padding-top: 3em;
@@ -54,9 +57,11 @@ p{
 	padding-right: 2em;
 	word-wrap: break-word;
 	text-align: center
+	
+}
+.patro{
 	white-space: pre;
 }
-
 .patro img{
 	max-width: 50%;
 	max-height: 50%;
