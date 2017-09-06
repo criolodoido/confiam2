@@ -85,6 +85,7 @@ body{
 
 }
 .post h2, h1{
+	font-family: 'Kurale';
 	padding-left: 2em;
 	padding-right: 2em;
 	word-wrap: break-word;
@@ -95,6 +96,24 @@ body{
 	max-width: 50%;
 	max-height: 50%;
 	border-radius: 100%;
+	margin:0 auto;	
+	border-style: dotted;
+	border-width: 5px;
+	float: top;
+}
+
+.post2 h2, h1{
+	font-family: 'Kurale';
+	padding-left: 2em;
+	padding-right: 2em;
+	word-wrap: break-word;
+	text-align: center
+}
+
+.post2 img{
+	max-width: 50%;
+	max-height: 50%;
+	border-radius: 20%;
 	margin:0 auto;	
 	border-style: dotted;
 	border-width: 5px;
