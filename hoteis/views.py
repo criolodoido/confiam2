@@ -3,7 +3,7 @@ from .models import Hoteis
 from django.utils import timezone
 
 def hoteis(request):
-	posts = Hoteis.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+	posts = Hoteis.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 	return render(request, 'hoteis/hoteis.html', {'posts': posts})
 # Create your views here.
 

@@ -4,7 +4,7 @@
 {% block content %}
 
 	{% for post in posts %}
-		<div class=item>
+		<div class=patro>
 			<p><h1><a href="{{ post.get_absolute_url }}">{{ post.nome }}</a></h1></p>
 			<center><img>{% cloudinary post.foto %}</img></center>
 			<p><h2>{{ post.apresentacao }}</h2></p>

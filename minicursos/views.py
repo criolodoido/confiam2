@@ -3,7 +3,7 @@ from .models import Minicursos
 from django.utils import timezone
 
 def minicursos(request):
-	posts = Minicursos.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+	posts = Minicursos.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 	return render(request, 'minicursos/minicursos.html', {'posts': posts})
 # Create your views here.
 
