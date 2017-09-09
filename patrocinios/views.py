@@ -2,7 +2,6 @@ from django.shortcuts import render, get_object_or_404
 from .models import Patrocinios
 from django.utils import timezone
 
-
 def patrocinios(request):
 	posts = Patrocinios.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 	return render(request, 'patrocinios/patrocinios.html', {'posts': posts})
