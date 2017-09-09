@@ -4,11 +4,11 @@
 {% block content %}
 
 
-	{% for patrocinio in patrocinios %}
+	{% for post in posts %}
 		<div class=patro>
-			<p><h1><a href="{{ patrocinio.get_absolute_url }}">{{ patrocinio.nome }}</a></h1></p>
-			<center><img>{% cloudinary patrocinio.foto %}</img></center>
-			<p><h2>{{ patrocinio.apresentacao }}</h2></p>
+			<p><h1><a href="{{ post.get_absolute_url }}">{{ post.nome }}</a></h1></p>
+			<center><img>{% cloudinary post.foto %}</img></center>
+			<p><h2>{{ post.apresentacao }}</h2></p>
 			<br>
 		</div>
 	{% endfor %}
