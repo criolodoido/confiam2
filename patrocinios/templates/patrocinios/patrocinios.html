@@ -2,10 +2,8 @@
 {% load cloudinary %}
 {% load staticfiles %}
 {% block content %}
-
-
 	{% for post in posts %}
-		<div class=patro>
+		<div class=item> <!--unica mudanca em relacao aos demais apps-->
 			<p><h1><a href="{{ post.get_absolute_url }}">{{ post.nome }}</a></h1></p>
 			<center><img>{% cloudinary post.foto %}</img></center>
 			<p><h2>{{ post.apresentacao }}</h2></p>
