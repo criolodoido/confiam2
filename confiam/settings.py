@@ -3,7 +3,7 @@ import dj_database_url
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-#  https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
+#  https://docs.djanoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '@f(e91e2qrhu$*80u=-%)3#*6r6m@vgwa7kz#0md638)_z!vp7'
