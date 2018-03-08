@@ -17,6 +17,13 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+	'core',
+    'hoteis',
+    'minicursos',
+    'palestras',
+    'patrocinios',
+    'programacao',
+    'restaurantes',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -24,13 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cloudinary',
-    'core',
-    'hoteis',
-    'minicursos',
-    'palestras',
-    'patrocinios',
-    'programacao',
-    'restaurantes',
+    
 ]
 
 MIDDLEWARE = [
